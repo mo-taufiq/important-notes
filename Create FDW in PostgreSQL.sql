@@ -22,3 +22,16 @@ CREATE SCHEMA foreign_schema;
 IMPORT FOREIGN SCHEMA public
  FROM SERVER foreign_server
  INTO foreign_schema;
+
+
+-- select all foreign server
+--select 
+--    srvname as name, 
+--    srvowner::regrole as owner, 
+--    fdwname as wrapper, 
+--    srvoptions as options
+--from pg_foreign_server
+--join pg_foreign_data_wrapper w on w.oid = srvfdw;
+
+-- delete foreign server
+--DROP server foreign_server_name;
